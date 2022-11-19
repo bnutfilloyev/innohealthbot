@@ -6,7 +6,9 @@ from loader import dp
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.answer(text="Hello, I'm a bot, I can help you with your health. Choose the service you need.",
+    await message.answer(text=f"Hello {message.from_user.full_name},\n\n"
+                              f"How are you doing today?\n"
+                              f"I am InnoHealthBot! what may I help you with today?",
                          reply_markup=main_btn)
 
 
