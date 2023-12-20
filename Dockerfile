@@ -1,4 +1,4 @@
-FROM python:3.12.0a3
+FROM python:3.12.1
 
 LABEL MAINTAINER="Bekhruz yoshlikmedia@gmail.com"
 
